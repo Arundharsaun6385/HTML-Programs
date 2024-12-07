@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ap_restaurant</title>
+    <link rel="stylesheet" href="pageA.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="border">
+        <div class="class_container1">
+            <div class="class_header">
+                <h1>AP</h1>
+                <h2>Restaurant</h2>
+            </div>
+            <nav>
+                <ul class="class_nav">
+                    <li><a href="/RestaurantWebsite/About.html">about us</a></li>
+                    <li><a href="/RestaurantWebsite/Menu.html">menu</a></li>
+                    <li><a href="/RestaurantWebsite/Event.html">events</a></li>
+                    <li><a href="/RestaurantWebsite/Loaction.html">location</a></li>
+                    <li><a href="/RestaurantWebsite/Contacts.html">contacts</a></li>
+                </ul>
+            </nav>
+            <div class="class_text">
+                <span>EN|UK</span>
+            </div>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="/RestaurantWebsite/About.html">about us</a></li>
+            <li><a href="/RestaurantWebsite/Menu.html">menu</a></li>
+            <li><a href="/RestaurantWebsite/Event.html">events</a></li>
+            <li><a href="/RestaurantWebsite/Loaction.html">location</a></li>
+            <li><a href="/RestaurantWebsite/Contacts.html">contacts</a></li>
+        </div>
+        <div class="class_container2">
+            <h3>Restaurant</h3>
+            <h1>Alaska Pete's</h1>
+            <h2>A casual BBQ Steak &</h2>
+            <h2 class="class_h2">Seafood House</h2>
+                <div class="class_button">
+                    <button><a href="/RestaurantWebsite/Contacts.html">Book a table</a>
+                        <img src="/images\chefimage.png" />
+                    </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toogleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toogleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+
+</html>
